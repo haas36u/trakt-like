@@ -15,3 +15,8 @@ notifications:
       - haasmyriam8@gmail.com
     on_success: change
     on_failure: always
+
+deploy : 
+  provider : heroku
+  api_key : 
+    secure : "ae904331-4afa-48d3-b960-c7ac0497b16b"
