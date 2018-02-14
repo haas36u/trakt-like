@@ -6,3 +6,12 @@ php:
 before_script:
   - php -v
   - composer install
+  - docker run --rm -v $(pwd):/app phpqa/phpcs .
+  - docker run --rm -v $(pwd):/app phpqa/security-check security:check
+
+notifications:
+  email:
+    recipients:
+      - haasmyriam8@gmail.com
+    on_success: change
+    on_failure: always
