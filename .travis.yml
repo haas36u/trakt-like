@@ -1,20 +1,17 @@
 language: php
-php: 
-  - "7.1"
-  - "7.0"
-
+php:
+- '7.1'
+- '7.0'
 before_script:
-  - php -v
-  - composer install
-
+- php -v
+- composer install
 notifications:
   email:
     recipients:
-      - haasmyriam8@gmail.com
+    - haasmyriam8@gmail.com
     on_success: change
     on_failure: always
-
-deploy : 
-  provider : heroku
-  api_key : 
-    secure : "ae904331-4afa-48d3-b960-c7ac0497b16b"
+deploy:
+  provider: heroku
+  api_key:
+    secure: sarYuJqBnZOT/XzSsrLZ9/XrnzPnB8PSYT6SZ+9IKWNk3pMRiitWmL5E19ivd2paNpUh+a0uiqpa1xApnMhVoidq/XUqGtEXWoIcYYJT4zZAZZC813l0+t5py5dK3iUangQAxc1rGy08Rx6Vk4Thta3A0a8A5vp/h1RaFAuB2OvTyUFwmP0h/Yi+i8IYKfjQr0Iv35ZbbTVZx+ysckvtQvbbJ/6iEl6T/4tHV4pN82frhhg9oiIG9ylissMIKbrr65dBU2719k8T3mztCAjKHkmzgQkWSDeGcjKe9DbbpVPaZf/oFclzjTyLheICAIz6g0/TRpAtEkudnzHNdWrN44kr8B/aeFw6lqVU75uZ8WzFUk76SGx1zgKXNicOGIWMN9u4DlHB7CKKpw//F2okQdMcWUZn7vK1sOI6qgIk0ykr+m41XepNThXnGPdxyFHM5PJjrcC/dz41CPAkBg4z3d2tsZkoml1B/udkmQuun2wFQhxjSB1BuQjs6VDKoihFjm1t9b5tpVVixVnpsmtcqmIrn6vw/erFnVYdRPi9oXdonHGAzVJsxSDubATxHVmJRYgrSSY+RF5NTglYR0r7W2IJTM4yaI9bqe/ruUeVeK4LWEwAVG2+ZFFM5yTtJ9YuiwAlB7VJqyY8GT7TpNf0vHQaqwdKjOYBvkB20ywEqCo=
